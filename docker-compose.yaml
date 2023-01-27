@@ -3,4 +3,4 @@ services:
     main:
         image: ghcr.io/angelesorganization/tarea-5-dews:main
         ports:
-            - 8000:8000
+            - 8001:8000
