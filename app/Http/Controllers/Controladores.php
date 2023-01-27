@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Modelo;
-use App\Services\TestCaca;
 use Illuminate\Http\Request;
 
 class Controladores extends Controller

@@ -14,11 +14,13 @@ use App\Http\Controllers\ControladorRegistros;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/tienda/public', [Controladores::class, 'store']);
-Route::get('/tienda/public', [Controladores::class, 'index']);
-Route::get('/tienda/public/{id}', [Controladores::class, 'show']);
 
 Route::post('/tienda/public/sugerencias', [ControladorSugerencias::class, 'store']);
 Route::get('/tienda/public/sugerencias', [ControladorSugerencias::class, 'index']);
 Route::post('/tienda/public/registros', [ControladorRegistros::class, 'store']);
 Route::get('/tienda/public/registros', [ControladorRegistros::class, 'index']);
+
+
+Route::post('/tienda/public', [Controladores::class, 'store']);
+Route::get('/tienda/public', [Controladores::class, 'index']);
+Route::get('/tienda/public/{id}', [Controladores::class, 'show']);

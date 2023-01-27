@@ -41,9 +41,6 @@
                     Nombre
                 </th>
                 <th>
-                    Contraseña
-                </th>
-                <th>
                     Email
                 </th>
             </tr>
@@ -51,9 +48,6 @@
                 <tr>
                     <td>
                         {{ $registro->nombreUsuario }}
-                    </td>
-                    <td>
-                        <img src="{{ $registro->registrosImagen }}" alt="">
                     </td>
                     <td>
                         {{ $registro->email }}

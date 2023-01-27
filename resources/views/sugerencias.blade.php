@@ -24,10 +24,10 @@
         <h2> Sugerencias del usuario </h2>
         <form action="{{ url('/tienda/public/sugerencias') }}" method="POST">
             @csrf
-            <label for="name">Titulo del Articulo</label><br>
+            <label for="name">Titulo de Sugerencia</label><br>
             <input type="text" name="name" id="name">
             <br><br>
-            <label for="sugerenciaImagen">Imagen del Articulo (URL)</label><br>
+            <label for="sugerenciaImagen">Imagen de la sugerencia (URL)</label><br>
             <input type="text" name="sugerenciaImagen" id="sugerenciaImagen">
             <br><br>
             <input type="submit" value ="Guardar">
@@ -35,10 +35,10 @@
         <table>
             <tr>
                 <th>
-                    Titulo del Articulo
+                    Titulo de la sugerencia
                 </th>
                 <th>
-                    Imagen del Articulo
+                    Imagen de la sugerencia
                 </th>
             </tr>
             @foreach ($sugerencias as $sugerencia)
